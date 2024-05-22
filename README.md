@@ -22,38 +22,38 @@ Esse projeto visa aprofundar estudos usando tecnologias de front (ReactJs, Boots
 - **Maven**
 
 - 2. **Ler Produtos**
-   - **URL:** `/api/products`
+   - **URL:** `/`
    - **Método:** `GET`
    - **Descrição:** Retorna a lista de todos os produtos.
+   - **Corpo da Requisição:**
+ 
+      ```json
+     {
+       "id": "27",
+       "name": "Smartfone Xiaomi Redmi 13",
+       "mark": "Xiaomi"
+     }
+     ```
 
 3. **Atualizar Produto**
-   - **URL:** `/api/products/{id}`
+   - **URL:** `/alterar`
    - **Método:** `PUT`
    - **Descrição:** Atualiza um produto existente.
    - **Corpo da Requisição:**
      
      ```json
      {
-       "name": "Nome Atualizado do Produto",
-       "description": "Descrição Atualizada do Produto",
-       "price": 150.0,
-       "quantity": 5
+       "id": "27",
+       "name": "Iphone 14",
+       "mark": "Apple"
      }
      ```
 
 4. **Deletar Produto**
-   - **URL:** `/api/products/{id}`
+   - **URL:** `/remover{id}`
    - **Método:** `DELETE`
    - **Descrição:** Deleta um produto existente.
-     
-      ```json
-     {
-       "name": "Nome Atualizado do Produto",
-       "description": "Descrição Atualizada do Produto",
-       "price": 150.0,
-       "quantity": 5
-     }
-     ```
+
 
 
 
